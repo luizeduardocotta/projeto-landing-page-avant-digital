@@ -6,21 +6,52 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Avant Digital - Consultoria</title>
+       
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
+            <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <script>window.rwbp={email:'luizavantdigital@gmail.com',phone:'5531997819671',message:'Olá, seja bem vindo! Entre em contato conosco!',lang:'pt-BR'}</script><script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
+        <script>
+            window.rwbp = {
+                email: 'luizavantdigital@gmail.com',
+                phone: '5531997819671',
+                message: 'Olá, seja bem vindo! Entre em contato conosco!',
+                lang: 'pt-BR'
+            }
+        </script>
+        <script defer async src='js/whats.js'></script>
+        <style>
+            /* Responsividade da logo */
+            .logo-img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Especificamente para dispositivos móveis */
+            @media (max-width: 768px) {
+                .logo-img {
+                    max-width: 70%; /* Ajuste o valor conforme necessário */
+                }
+            }
+
+            @media (max-width: 576px) {
+                .logo-img {
+                    max-width: 60%; /* Para telas menores ainda */
+                }
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Avant Digital</Avant></a>
+                <a class="navbar-brand" href="#page-top">
+                    <img src="/assets/img/logo-avant-digital.png" alt="Avant Digital Logo" style="max-height: 50px;">
+                </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -33,14 +64,14 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>   
         <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Consultoria Digital</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A sua empresa aberta 24h por dia!</h2>
+                        <h1 class="mx-auto my-0 text-uppercase">Avant</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Consultoria Digital</h2>
                         <a class="btn btn-primary" href="#about">Quero saber mais</a>
                     </div>
                 </div>
@@ -54,7 +85,7 @@
                         <h2 class="text-white mb-4">A sua empresa na palma da sua mão!</h2>
                         <p class="text-white-50">
                             Na AVANT DIGITAL você terá o controle da sua empresa na palma da sua mão! Criação de sites de alta performance, Inbound Marketing, Copywriting & Conteúdo Estratégico, Campanhas de alta performance no Google, Instagram, Facebook, YouTube e LinkedIn, Consultoria de Marketing Digital.
-                            <a href="https://startbootstrap.com/theme/grayscale/">Nos chame agora mesmo!</a>
+                            <a href="#signup">Nos chame agora mesmo!</a>
                             O nosso time de consultores estará pronto para ajudar a impulsionar o crescimento de forma organizada do seu negócio! 
                         </p>
                     </div>
@@ -71,7 +102,7 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Serviços</h4>
-                            <p class="text-black-50 mb-0">Criação de sites e digitalização da sua empresa. Através do Marketing Digital, SEO, atração de clientes e tráfego pago. Implantação e controle de folha de ponto. Entrevistas e contratação. 
+                            <p class="text-black-50 mb-0">Criação de sites e digitalização da sua empresa. Desenvolvimento e gerenciamento de estratégias para maximizar sua presença e engajamento nas redes sociais. Criação e otimização de links automatizados para facilitar o acesso e aumentar a conversão. Automação e inteligência avançada no WhatsApp Business. Consultoria Comercial e Estratégica.
                             </p>
                         </div>
                     </div>
@@ -107,33 +138,21 @@
             </div>
         </section>
         <!-- Signup-->
-        <section class="signup-section" id="signup">
+        <!--<section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 class="text-white mb-5">Inscreva-se para receber atualizações!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm"  action="https://forsubmit.co/luizavantdigital@gmail.com"
-                        
-                        data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
+                        <form class="form-signup" id="contactForm">
+                            <!-- Email address input--
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Digite o seu e-mail..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Enviar</button></div>
+                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Digite o seu e-mail..." aria-label="Enter email address..." required /></div>
+                                <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Enviar</button></div>
                             </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
+                            <div class="invalid-feedback mt-2" id="emailError">An email is required.</div>
+                            <div class="invalid-feedback mt-2" id="emailInvalid">Email is not valid.</div>
+                            <!-- Submit success message--
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
                                     <div class="fw-bolder">Form submission successful!</div>
@@ -141,12 +160,11 @@
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                           <!--<div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div-->
                         </form>
                     </div>
                 </div>
@@ -182,28 +200,48 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Telefone</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+55 (31) 99781-9671</div>
+                                <div class="small text-black-50">(31) 98781-9671</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://www.instagram.com/avantdigitaloficial" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <!-- <a class="mx-2" href="#!"><i class="fa-brands fa-linkedin"></i></a> -->
-                    <a class="mx-2" href="https://api.whatsapp.com/send?phone=5531997819671" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/avantdigitaloficial" target="_blank" title="Siga-nos no Instagram">
+                        <i class="fab fa-instagram"></i></a>                 
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Group Avant 2024</div></footer>
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div>
+        </footer>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- EmailJS integration -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+        <script type="text/javascript">
+            emailjs.init("ds8gKOgWtApbNfLEe");
+            
+            // Form submission handling
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                const email = document.getElementById("emailAddress").value;
+
+                emailjs.send("service_avant_digital", "template_smivfia", {
+                    email: email,
+                }).then(function(response) {
+                    document.getElementById("submitSuccessMessage").classList.remove("d-none");
+                }, function(error) {
+                    document.getElementById("submitErrorMessage").classList.remove("d-none");
+                });
+            }); 
+        </script>
+        <a href="https://wa.me/5531997819671" class="whatsapp-float" target="_blank" title="Entre em contato pelo WhatsApp">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
     </body>
 </html>

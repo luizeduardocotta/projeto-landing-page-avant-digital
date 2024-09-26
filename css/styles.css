@@ -3846,6 +3846,7 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
@@ -8246,9 +8247,10 @@ textarea.form-control-lg {
 }
 
 .text-white-50 {
-  --bs-text-opacity: 1;
+    --bs-text-opacity: 1;
   color: rgba(255, 255, 255, 0.5) !important;
 }
+
 
 .text-reset {
   --bs-text-opacity: 1;
@@ -11051,6 +11053,7 @@ body {
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+
 }
 
 .btn {
@@ -11107,7 +11110,7 @@ body {
   }
   .masthead h2, .masthead .h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 3rem;
   }
 }
 
@@ -11128,7 +11131,7 @@ body {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem transparente;
   }
 }
 .projects-section .project-text {
@@ -11191,6 +11194,7 @@ body {
   line-height: 3rem;
   color: rgba(255, 255, 255, 0.3);
 }
+
 .contact-section .social a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -11198,6 +11202,61 @@ body {
   color: #fff;
 }
 
-.footer {
-  padding: 5rem 0;
+
+.logo-principal {
+  text-align: justify;
+}
+
+/* Imagem de largura total sem ultrapassar margens */
+.full-width-image {
+  width: 100vw; /* Largura total da viewport */
+  height: auto; /* Mantém a proporção da altura */
+  object-fit: cover; /* Cobre a área sem distorcer */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura */
+  margin-left: calc(-50vw + 50%); /* Centraliza a imagem, evitando margens laterais */
+}
+
+/* Evitar scroll lateral */
+body {
+    overflow-x: hidden; /* Remove o scroll horizontal */
+}
+
+/* Estilo para os botões flutuantes */
+.floating-buttons {
+  position: fixed; /* Fixa os botões na tela */
+  bottom: 20px; /* Distância do fundo da tela */
+  right: 20px; /* Distância da direita da tela */
+  display: flex; /* Para alinhar os botões lado a lado */
+  gap: 10px; /* Espaçamento entre os botões */
+  z-index: 1000; /* Garante que os botões fiquem acima de outros elementos */
+}
+
+.floating-button {
+  background-color: #25D366; /* Cor padrão para WhatsApp */
+  color: white; /* Cor do ícone */
+  border-radius: 50%; /* Botão redondo */
+  width: 40px; /* Largura do botão */
+  height: 40px; /* Altura do botão */
+  display: flex; /* Para centralizar o ícone */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  text-decoration: none; /* Remove sublinhado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o botão */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.floating-button.instagram {
+  background-color: #E4405F; /* Cor para Instagram */
+}
+
+.floating-button:hover {
+  background-color: #128C7E; /* Cor de fundo ao passar o mouse sobre o botão do WhatsApp */
+}
+
+.floating-button.instagram:hover {
+  background-color: #C13584; /* Cor de fundo ao passar o mouse sobre o botão do Instagram */
+}
+
+.fab {
+  font-size: 36px; /* Tamanho do ícone aumentado */
 }
